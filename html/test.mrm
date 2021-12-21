@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="css/style.css" rel="stylesheet">
+	<title>MARIMBA</title>
+	<?mrm from datetime import datetime ?>
+</head>
+
+<body>
+	<h1><?mrm print("Generated :", datetime.now()) ?></h1>
+	<p>Not generated</p>
+
+<?mrm
+a = 0
+print("<br>")
+for i in range(10):
+	 print("+++", i, "<br>")
+	 a += i
+?>
+
+	<div><?mrm print("<h2>", a, "</h2>") ?></div>
+	<div><?mrm print("<h2>", MRM.METHOD, MRM.URL, "</h2>") ?></div>
+	<div><?mrm print("<h2>", MRM.GET, "</h2>") ?></div>
+	<div><?mrm print("<h2>", repr(MRM.POST), "</h2>") ?></div>
+	<div><?mrm print("<h2>", MRM.HEADERS, "</h2>") ?></div>
+</body>
+
+</html>

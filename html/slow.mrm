@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<?mrm
+from time import sleep, time
+print(time(), "<br>")
+sleep(10)
+print(time())
+?>
